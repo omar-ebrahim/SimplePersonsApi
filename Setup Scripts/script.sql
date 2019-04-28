@@ -1,6 +1,6 @@
 -- Create the table
 
-CREATE TABLE [dbo].[Person]
+CREATE TABLE [dbo].[Persons]
 (
     [PersonID]      [INT]               NOT NULL IDENTITY(1,1),
     [Forenames]     [VARCHAR]   (100)   NOT NULL,
@@ -17,7 +17,7 @@ GO
 
 -- Inserts (so we have some test data to start with)
 
-INSERT INTO [dbo].[Person] (Forenames, Surname, DateOfBirth, Notes) VALUES ('Omar', 'Ebrahim', '1980-03-01');
-INSERT INTO [dbo].[Person] (Forenames, Surname, DateOfBirth, Notes) VALUES ('Mark', 'Wilson', '1990-01-05');
-INSERT INTO [dbo].[Person] (Forenames, Surname, DateOfBirth, Notes) VALUES ('Jessie', 'Jones', '1986-09-11');
-INSERT INTO [dbo].[Person] (Forenames, Surname, DateOfBirth, Notes) VALUES ('Monika', 'Jakubska', '1990-10-01');
+INSERT INTO [dbo].[Person] (Forenames, Surname, DateOfBirth) VALUES ('Omar', 'Ebrahim', '1980-03-01');
+INSERT INTO [dbo].[Person] (Forenames, Surname, DateOfBirth) VALUES ('Mark', 'Wilson', '1990-01-05');
+INSERT INTO [dbo].[Person] (Forenames, Surname, DateOfBirth) VALUES ('Jessie', 'Jones', '1986-09-11');
+INSERT INTO [dbo].[Person] (Forenames, Surname, DateOfBirth) VALUES ('Monika', 'Jakubska', '1990-10-01');
