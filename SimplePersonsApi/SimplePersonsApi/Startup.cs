@@ -5,8 +5,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SimplePersonsApi.DataAccess;
-using SimplePersonsApi.Repositories;
-using SimplePersonsApi.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 
 namespace SimplePersonsApi
 {
@@ -20,13 +22,11 @@ namespace SimplePersonsApi
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection serviceCollection)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("PersonsDatabase")));
-
-            services.AddScoped<IPersonRepository, PersonRepository>();
-            services.AddScoped<IPersonsGetAllService, PersonsGetAllService>();
+            serviceCollection.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            serviceCollection.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("PersonsDatabase")));
+            SetUpDependencyInjection(serviceCollection);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +43,26 @@ namespace SimplePersonsApi
 
             app.UseHttpsRedirection();
             app.UseMvc();
+        }
+
+        /// <summary>
+        /// Using reflection to create dependencies
+        /// </summary>
+        private static void SetUpDependencyInjection(IServiceCollection serviceCollection)
+        {
+            // Handlers
+            GetTypes("SimplePersonsApi.Handlers").ToList().ForEach(x => serviceCollection.AddScoped(x.GetInterface($"I{x.Name}"), x));
+
+            // Services
+            GetTypes("SimplePersonsApi.Services").ToList().ForEach(x => serviceCollection.AddScoped(x.GetInterface($"I{x.Name}"), x));
+
+            // Repositories
+            GetTypes("SimplePersonsApi.Repositories").ToList().ForEach(x => serviceCollection.AddScoped(x.GetInterface($"I{x.Name}"), x));
+        }
+
+        private static IEnumerable<System.Type> GetTypes(string assemblyName)
+        {
+            return Assembly.GetExecutingAssembly().ExportedTypes.Where(x => x.IsClass && x.IsPublic && x.Namespace == assemblyName);
         }
     }
 }

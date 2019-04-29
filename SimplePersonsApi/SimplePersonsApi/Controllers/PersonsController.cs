@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SimplePersonsApi.Services;
+using SimplePersonsApi.Handlers;
+using SimplePersonsApi.Models;
 using System;
 
 namespace SimplePersonsApi.Controllers
@@ -8,17 +9,90 @@ namespace SimplePersonsApi.Controllers
     [ApiController]
     public class PersonsController : ControllerBase
     {
-        private readonly IPersonsGetAllService personsGetAllService;
+        private readonly IPersonsGetAllHandler getAllHandler;
+        private readonly IPersonsGetByIdHandler getByIdHandler;
+        private readonly IPersonsCreateHandler createHandler;
+        private readonly IPersonsPutHandler putHandler;
+        private readonly IPersonsDeleteHandler deleteHandler;
 
-        public PersonsController(IPersonsGetAllService personsGetAllService)
+        public PersonsController(IPersonsGetAllHandler getAllHandler, IPersonsGetByIdHandler getByIdHandler, IPersonsCreateHandler createHandler, IPersonsPutHandler putHandler, IPersonsDeleteHandler deleteHandler)
         {
-            this.personsGetAllService = personsGetAllService ?? throw new ArgumentNullException(nameof(personsGetAllService));
+            this.getAllHandler = getAllHandler ?? throw new ArgumentNullException(nameof(getAllHandler));
+            this.getByIdHandler = getByIdHandler ?? throw new ArgumentNullException(nameof(getByIdHandler));
+            this.createHandler = createHandler ?? throw new ArgumentNullException(nameof(createHandler));
+            this.putHandler = putHandler ?? throw new ArgumentNullException(nameof(putHandler));
+            this.deleteHandler = deleteHandler ?? throw new ArgumentNullException(nameof(deleteHandler));
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(personsGetAllService.Get());
+            return Ok(getAllHandler.Handle());
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            var person = getByIdHandler.Handle(id);
+            if (person == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Ok(person);
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody]Person person)
+        {
+            TryValidateModel(person);
+
+            if (ModelState.IsValid)
+            {
+                return Ok(createHandler.Handle(person));
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpPut]
+        public IActionResult Put(int id, [FromBody]Person person)
+        {
+            var personToEdit = getByIdHandler.Handle(id);
+            if (personToEdit == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                TryValidateModel(person);
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest();
+                }
+                else
+                {
+                    return Ok(putHandler.Put(id, person));
+                }
+            }
+        }
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            var person = getByIdHandler.Handle(id);
+            if (person == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Ok(deleteHandler.Handle(id));
+            }
         }
     }
 }

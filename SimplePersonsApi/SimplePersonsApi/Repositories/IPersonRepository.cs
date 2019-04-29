@@ -7,8 +7,8 @@ namespace SimplePersonsApi.Repositories
     {
         IEnumerable<Person> GetAll();
         Person Get(int id);
-        void Create(Person person);
-        void Update(int id, Person person);
-        void Delete(int id);
+        Person Create(Person person);
+        Person Update(int id, Person person);
+        bool Delete(int id);
     }
 }

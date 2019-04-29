@@ -2,8 +2,8 @@
 
 namespace SimplePersonsApi.Services
 {
-    public interface IPersonsGetByIdService
+    public interface IPersonsUpdateService
     {
-        Person Get(int id);
+        Person Put(int id, Person person);
     }
 }

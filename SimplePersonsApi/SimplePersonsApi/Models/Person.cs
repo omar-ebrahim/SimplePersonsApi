@@ -5,6 +5,13 @@ namespace SimplePersonsApi.Models
 {
     public class Person
     {
+        public Person(string forenames, string surname, DateTime dateOfBirth)
+        {
+            Forenames = forenames;
+            Surname = surname;
+            DateOfBirth = dateOfBirth;
+        }
+
         public int PersonID { get; set; }
 
         [Required]

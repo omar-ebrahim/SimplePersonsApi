@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SimplePersonsApi.Services
 {
-    public interface IPersonsGetAllService : IService
+    public interface IPersonsGetAllService
     {
         IEnumerable<Person> Get();
     }
