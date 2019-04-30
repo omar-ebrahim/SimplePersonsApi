@@ -45,7 +45,7 @@ namespace SimplePersonsApi.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody]Person person)
+        public IActionResult Post(Person person)
         {
             TryValidateModel(person);
 
@@ -59,10 +59,10 @@ namespace SimplePersonsApi.Controllers
             }
         }
 
-        [HttpPut]
-        public IActionResult Put(int id, [FromBody]Person person)
+        [HttpPut("{personId}")]
+        public IActionResult Put(int personId, [FromBody]Person person)
         {
-            var personToEdit = getByIdHandler.Handle(id);
+            var personToEdit = getByIdHandler.Handle(personId);
             if (personToEdit == null)
             {
                 return NotFound();
@@ -76,12 +76,12 @@ namespace SimplePersonsApi.Controllers
                 }
                 else
                 {
-                    return Ok(putHandler.Put(id, person));
+                    return Ok(putHandler.Put(personId, person));
                 }
             }
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             var person = getByIdHandler.Handle(id);

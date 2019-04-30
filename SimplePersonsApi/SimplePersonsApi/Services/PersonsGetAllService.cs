@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace SimplePersonsApi.Services
 {
-    public class PersonsGetAllService : Service, IPersonsGetAllService
+    public class PersonsGetAllService : IPersonsGetAllService
     {
         private readonly IPersonRepository personRepository;
 
