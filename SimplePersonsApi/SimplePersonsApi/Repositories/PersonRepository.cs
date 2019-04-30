@@ -21,7 +21,7 @@ namespace SimplePersonsApi.Repositories
 
         public Person Get(int id)
         {
-            return context.Find<Person>(id);
+            return context.Persons.Find(id);
         }
 
         public Person Create(Person person)
@@ -34,6 +34,12 @@ namespace SimplePersonsApi.Repositories
         public Person Update(int id, Person person)
         {
             var oldPerson = context.Find<Person>(id);
+
+            if (oldPerson == null)
+            {
+                return null;
+            }
+
             oldPerson.Forenames = person.Forenames;
             oldPerson.Surname = person.Surname;
             oldPerson.DateOfBirth = person.DateOfBirth;

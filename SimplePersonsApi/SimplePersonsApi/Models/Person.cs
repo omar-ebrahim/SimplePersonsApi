@@ -7,8 +7,14 @@ namespace SimplePersonsApi.Models
     {
         public Person(string forenames, string surname, DateTime dateOfBirth)
         {
-            Forenames = forenames;
-            Surname = surname;
+            Forenames = forenames ?? throw new ArgumentNullException(nameof(forenames));
+            Surname = surname ?? throw new ArgumentNullException(nameof(surname));
+
+            if (DateOfBirth < new DateTime(1753, 1, 1))
+            {
+                throw new ArgumentOutOfRangeException(nameof(dateOfBirth));
+            }
+
             DateOfBirth = dateOfBirth;
         }
 
