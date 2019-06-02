@@ -1,0 +1,17 @@
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\bin\Debug\netcoreapp2.2\People.Api.UnitTests.deps.json
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\bin\Debug\netcoreapp2.2\People.Api.UnitTests.runtimeconfig.json
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\bin\Debug\netcoreapp2.2\People.Api.UnitTests.runtimeconfig.dev.json
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\bin\Debug\netcoreapp2.2\People.Api.UnitTests.dll
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\bin\Debug\netcoreapp2.2\People.Api.UnitTests.pdb
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\bin\Debug\netcoreapp2.2\People.Api.dll
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\bin\Debug\netcoreapp2.2\People.Api.pdb
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\obj\Debug\netcoreapp2.2\People.Api.UnitTests.csprojAssemblyReference.cache
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\obj\Debug\netcoreapp2.2\People.Api.UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\obj\Debug\netcoreapp2.2\People.Api.UnitTests.AssemblyInfoInputs.cache
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\obj\Debug\netcoreapp2.2\People.Api.UnitTests.AssemblyInfo.cs
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\obj\Debug\netcoreapp2.2\People.Api.UnitTests.csproj.CopyComplete
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\obj\Debug\netcoreapp2.2\People.Api.UnitTests.dll
+C:\Users\Omar\Documents\GitHub\People\People\People.Api.UnitTests\obj\Debug\netcoreapp2.2\People.Api.UnitTests.pdb

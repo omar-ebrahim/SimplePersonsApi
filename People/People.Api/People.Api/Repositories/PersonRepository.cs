@@ -11,7 +11,7 @@ namespace People.Api.Repositories
 
         public PersonRepository(Context context)
         {
-            this.context = context;
+            this.context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
         public IEnumerable<Person> GetAll()

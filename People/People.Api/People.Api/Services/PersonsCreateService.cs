@@ -10,7 +10,7 @@ namespace People.Api.Services
 
         public PersonsCreateService(IPersonRepository repository)
         {
-            this.repository = repository ?? throw new ArgumentException(nameof(repository));
+            this.repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }
 
         public Person Create(Person person)
