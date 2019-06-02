@@ -3,3 +3,9 @@
 ################################################################################
 
 /People/.vs
+/People/People.Api/.vs
+/People/People.Web/.vs
+/People/People/People.Api.UnitTests/bin
+/People/People/People.Api.UnitTests/obj
+/People/People.Api/People.Api/bin
+/People/People.Api/People.Api/obj

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People.Api", "SimplePersonsApi\SimplePersonsApi\People.Api.csproj", "{14BF2703-F209-4B98-8A95-2C40CB1BC001}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People.Api", "People.Api\People.Api\People.Api.csproj", "{14BF2703-F209-4B98-8A95-2C40CB1BC001}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People.Web", "People.Web\People.Web.csproj", "{E64529A9-7013-4EAF-8AF3-17EBD95559C0}"
 EndProject
