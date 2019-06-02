@@ -1,0 +1,14 @@
+C:\Users\Omar\Documents\GitHub\People\People\SimplePersonsApi\SimplePersonsApi\bin\Debug\netcoreapp2.2\People.Api.deps.json
+C:\Users\Omar\Documents\GitHub\People\People\SimplePersonsApi\SimplePersonsApi\bin\Debug\netcoreapp2.2\People.Api.runtimeconfig.json
+C:\Users\Omar\Documents\GitHub\People\People\SimplePersonsApi\SimplePersonsApi\bin\Debug\netcoreapp2.2\People.Api.runtimeconfig.dev.json
+C:\Users\Omar\Documents\GitHub\People\People\SimplePersonsApi\SimplePersonsApi\bin\Debug\netcoreapp2.2\People.Api.dll
+C:\Users\Omar\Documents\GitHub\People\People\SimplePersonsApi\SimplePersonsApi\bin\Debug\netcoreapp2.2\People.Api.pdb
+C:\Users\Omar\Documents\GitHub\People\People\SimplePersonsApi\SimplePersonsApi\obj\Debug\netcoreapp2.2\People.Api.csprojAssemblyReference.cache
+C:\Users\Omar\Documents\GitHub\People\People\SimplePersonsApi\SimplePersonsApi\obj\Debug\netcoreapp2.2\People.Api.csproj.CoreCompileInputs.cache
+C:\Users\Omar\Documents\GitHub\People\People\SimplePersonsApi\SimplePersonsApi\obj\Debug\netcoreapp2.2\People.Api.RazorAssemblyInfo.cache
+C:\Users\Omar\Documents\GitHub\People\People\SimplePersonsApi\SimplePersonsApi\obj\Debug\netcoreapp2.2\People.Api.RazorAssemblyInfo.cs
+C:\Users\Omar\Documents\GitHub\People\People\SimplePersonsApi\SimplePersonsApi\obj\Debug\netcoreapp2.2\People.Api.AssemblyInfoInputs.cache
+C:\Users\Omar\Documents\GitHub\People\People\SimplePersonsApi\SimplePersonsApi\obj\Debug\netcoreapp2.2\People.Api.AssemblyInfo.cs
+C:\Users\Omar\Documents\GitHub\People\People\SimplePersonsApi\SimplePersonsApi\obj\Debug\netcoreapp2.2\People.Api.RazorTargetAssemblyInfo.cache
+C:\Users\Omar\Documents\GitHub\People\People\SimplePersonsApi\SimplePersonsApi\obj\Debug\netcoreapp2.2\People.Api.dll
+C:\Users\Omar\Documents\GitHub\People\People\SimplePersonsApi\SimplePersonsApi\obj\Debug\netcoreapp2.2\People.Api.pdb

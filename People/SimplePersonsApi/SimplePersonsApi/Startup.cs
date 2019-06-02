@@ -23,7 +23,7 @@ namespace SimplePersonsApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection serviceCollection)
         {
-            serviceCollection.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            serviceCollection.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             serviceCollection.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("PersonsDatabase")));
             SetUpDependencyInjection(serviceCollection);
         }
