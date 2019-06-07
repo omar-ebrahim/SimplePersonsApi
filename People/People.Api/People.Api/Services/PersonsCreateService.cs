@@ -1,16 +1,12 @@
 ﻿using People.Api.Models;
 using People.Api.Repositories;
-using System;
 
 namespace People.Api.Services
 {
-    public class PersonsCreateService : IPersonsCreateService
+    public class PersonsCreateService : BaseService, IPersonsCreateService
     {
-        private readonly IPersonRepository repository;
-
-        public PersonsCreateService(IPersonRepository repository)
+        public PersonsCreateService(IPersonRepository repository) : base(repository)
         {
-            this.repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }
 
         public Person Create(Person person)

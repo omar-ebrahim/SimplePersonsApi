@@ -1,15 +1,11 @@
 ﻿using People.Api.Repositories;
-using System;
 
 namespace People.Api.Services
 {
-    public class PersonsDeleteService : IPersonsDeleteService
+    public class PersonsDeleteService : BaseService, IPersonsDeleteService
     {
-        private readonly IPersonRepository repository;
-
-        public PersonsDeleteService(IPersonRepository repository)
+        public PersonsDeleteService(IPersonRepository repository) : base(repository)
         {
-            this.repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }
 
         public bool Delete(int id)

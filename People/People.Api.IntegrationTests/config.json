@@ -1,0 +1,13 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  "ConnectionStrings": {
+    "PersonsDatabase": "Server=localhost\\SQLEXPRESS;Database=People;User Id=SUPER;Password=SUPER;Trusted_Connection=True;"
+  }
+}

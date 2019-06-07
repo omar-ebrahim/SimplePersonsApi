@@ -6,13 +6,13 @@ using Xunit;
 
 namespace People.Api.UnitTests.Services
 {
-    public class PersonsDeleteServiceTests
+    public class BaseServiceTests
     {
         [Fact]
         public void Constructor_RepositoryIsMissing_Throws()
         {
             // Act & Assert
-            Assert.Throws<ArgumentNullException>(() => new PersonsDeleteService(null));
+            Assert.Throws<ArgumentNullException>(() => new TestableService(null));
         }
 
         [Fact]
@@ -22,10 +22,17 @@ namespace People.Api.UnitTests.Services
             var dummyRepostitory = new Mock<IPersonRepository>().Object;
 
             // Act
-            var service = new PersonsDeleteService(dummyRepostitory);
+            var service = new TestableService(dummyRepostitory);
 
             // Assert
             Assert.NotNull(service);
+        }
+    }
+
+    class TestableService : BaseService
+    {
+        public TestableService(IPersonRepository repository) : base(repository)
+        {
         }
     }
 }

@@ -1,22 +1,18 @@
 ﻿using People.Api.Models;
 using People.Api.Repositories;
-using System;
 using System.Collections.Generic;
 
 namespace People.Api.Services
 {
-    public class PersonsGetAllService : IPersonsGetAllService
+    public class PersonsGetAllService : BaseService, IPersonsGetAllService
     {
-        private readonly IPersonRepository personRepository;
-
-        public PersonsGetAllService(IPersonRepository personRepository)
+        public PersonsGetAllService(IPersonRepository repository) : base(repository)
         {
-            this.personRepository = personRepository ?? throw new ArgumentNullException(nameof(personRepository));
         }
 
         public IEnumerable<Person> Get()
         {
-            return personRepository.GetAll();
+            return repository.GetAll();
         }
     }
 }
