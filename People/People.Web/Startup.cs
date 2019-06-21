@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,6 +34,7 @@ namespace People.Web
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            SetUpDependencyInjection(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,6 +61,17 @@ namespace People.Web
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+
+        private static void SetUpDependencyInjection(IServiceCollection serviceCollection)
+        {
+            // Services
+            GetTypes("People.Web.Services").ToList().ForEach(x => serviceCollection.AddScoped(x.GetInterface($"I{x.Name}"), x));
+        }
+
+        private static IEnumerable<Type> GetTypes(string assemblyName)
+        {
+            return Assembly.GetExecutingAssembly().ExportedTypes.Where(x => x.IsClass && x.IsPublic && x.Namespace == assemblyName);
         }
     }
 }

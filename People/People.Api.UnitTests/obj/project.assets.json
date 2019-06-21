@@ -2085,7 +2085,6 @@
       "path": "microsoft.dotnet.platformabstractions/1.0.3",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "lib/.DS_Store",
         "lib/net451/Microsoft.DotNet.PlatformAbstractions.dll",
         "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll",
@@ -2232,7 +2231,6 @@
       "path": "microsoft.extensions.dependencymodel/1.0.3",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "lib/.DS_Store",
         "lib/net451/Microsoft.Extensions.DependencyModel.dll",
         "lib/netstandard1.3/Microsoft.Extensions.DependencyModel.dll",
@@ -3089,6 +3087,8 @@
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
+        "Newtonsoft.Json.9.0.1.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -3103,8 +3103,6 @@
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.9.0.1.nupkg.sha512",
-        "newtonsoft.json.nuspec",
         "tools/install.ps1"
       ]
     },
@@ -3582,7 +3580,6 @@
       "path": "system.componentmodel.eventbasedasync/4.0.11",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3891,7 +3888,6 @@
       "path": "system.diagnostics.textwritertracelistener/4.0.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3986,7 +3982,6 @@
       "path": "system.diagnostics.tracesource/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4949,7 +4944,6 @@
       "path": "system.reflection.emit.lightweight/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5050,7 +5044,6 @@
       "path": "system.reflection.metadata/1.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.1/System.Reflection.Metadata.dll",
@@ -6467,7 +6460,6 @@
       "path": "system.xml.xpath/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6695,11 +6687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Omar\\Documents\\GitHub\\People\\People\\People.Api.UnitTests\\People.Api.UnitTests.csproj",
+      "projectUniqueName": "E:\\Documents\\GitHub\\People\\People\\People.Api.UnitTests\\People.Api.UnitTests.csproj",
       "projectName": "People.Api.UnitTests",
-      "projectPath": "C:\\Users\\Omar\\Documents\\GitHub\\People\\People\\People.Api.UnitTests\\People.Api.UnitTests.csproj",
+      "projectPath": "E:\\Documents\\GitHub\\People\\People\\People.Api.UnitTests\\People.Api.UnitTests.csproj",
       "packagesPath": "C:\\Users\\Omar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Omar\\Documents\\GitHub\\People\\People\\People.Api.UnitTests\\obj\\",
+      "outputPath": "E:\\Documents\\GitHub\\People\\People\\People.Api.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6718,8 +6710,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Omar\\Documents\\GitHub\\People\\People\\People.Api\\People.Api\\People.Api.csproj": {
-              "projectPath": "C:\\Users\\Omar\\Documents\\GitHub\\People\\People\\People.Api\\People.Api\\People.Api.csproj"
+            "E:\\Documents\\GitHub\\People\\People\\People.Api\\People.Api\\People.Api.csproj": {
+              "projectPath": "E:\\Documents\\GitHub\\People\\People\\People.Api\\People.Api\\People.Api.csproj"
             }
           }
         }

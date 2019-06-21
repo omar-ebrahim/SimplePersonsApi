@@ -12,3 +12,17 @@ C:\Users\Omar\Documents\GitHub\People\People\People.Api.IntegrationTests\obj\Deb
 C:\Users\Omar\Documents\GitHub\People\People\People.Api.IntegrationTests\bin\Debug\netcoreapp2.2\People.Api.IntegrationTests.pdb
 C:\Users\Omar\Documents\GitHub\People\People\People.Api.IntegrationTests\obj\Debug\netcoreapp2.2\People.Api.IntegrationTests.dll
 C:\Users\Omar\Documents\GitHub\People\People\People.Api.IntegrationTests\obj\Debug\netcoreapp2.2\People.Api.IntegrationTests.pdb
+E:\Documents\GitHub\People\People\People.Api.IntegrationTests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+E:\Documents\GitHub\People\People\People.Api.IntegrationTests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+E:\Documents\GitHub\People\People\People.Api.IntegrationTests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+E:\Documents\GitHub\People\People\People.Api.IntegrationTests\bin\Debug\netcoreapp2.2\People.Api.IntegrationTests.deps.json
+E:\Documents\GitHub\People\People\People.Api.IntegrationTests\bin\Debug\netcoreapp2.2\People.Api.IntegrationTests.runtimeconfig.json
+E:\Documents\GitHub\People\People\People.Api.IntegrationTests\bin\Debug\netcoreapp2.2\People.Api.IntegrationTests.runtimeconfig.dev.json
+E:\Documents\GitHub\People\People\People.Api.IntegrationTests\bin\Debug\netcoreapp2.2\People.Api.IntegrationTests.dll
+E:\Documents\GitHub\People\People\People.Api.IntegrationTests\bin\Debug\netcoreapp2.2\People.Api.IntegrationTests.pdb
+E:\Documents\GitHub\People\People\People.Api.IntegrationTests\obj\Debug\netcoreapp2.2\People.Api.IntegrationTests.csprojAssemblyReference.cache
+E:\Documents\GitHub\People\People\People.Api.IntegrationTests\obj\Debug\netcoreapp2.2\People.Api.IntegrationTests.csproj.CoreCompileInputs.cache
+E:\Documents\GitHub\People\People\People.Api.IntegrationTests\obj\Debug\netcoreapp2.2\People.Api.IntegrationTests.AssemblyInfoInputs.cache
+E:\Documents\GitHub\People\People\People.Api.IntegrationTests\obj\Debug\netcoreapp2.2\People.Api.IntegrationTests.AssemblyInfo.cs
+E:\Documents\GitHub\People\People\People.Api.IntegrationTests\obj\Debug\netcoreapp2.2\People.Api.IntegrationTests.dll
+E:\Documents\GitHub\People\People\People.Api.IntegrationTests\obj\Debug\netcoreapp2.2\People.Api.IntegrationTests.pdb
